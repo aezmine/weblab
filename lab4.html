@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komuniti Slow Rock Melayu</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom, #1e1e1e, #121212);
+            color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        #about {
+        text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f5f5f5;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        section {
+            background: #1c1c1c;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            padding: 30px;
+            max-width: 800px;
+        }
+
+        section h2 {
+            color: #f39c12;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background: #2c2c2c;
+            color: #f5f5f5;
+            font-size: 14px;
+        }
+
+        form input::placeholder {
+            color: #aaa;
+        }
+
+        .gender-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .gender-container label {
+            margin: 0;
+        }
+
+        form button {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            background: #101010;
+            color: #7f8c8d;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo01.png" alt="Jiwang Logo">
+        <h1>Komuniti Slow Rock Melayu</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#video">Kenangan Video</a></li>
+                <li><a href="#join">Sertai Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Apa Itu Jiwang?</h2>
+            <p>Jiwang Melayu adalah sebuah kisah tentang cinta yang membara, kerinduan yang mendalam, dan keindahan seni yang meresap ke jiwa. Ia adalah sebuah perjalanan emosi yang memeluk hati, menyulam kenangan indah yang tersimpan dalam lubuk sanubari. Kami adalah komuniti yang menghargai seni, muzik, dan puisi Melayu, menyatukan insan-insan yang merindui kehangatan detik-detik manis masa lalu, sambil merangkai keindahan warisan budaya yang abadi.</p>
+        </section>
+
+        <section id="video">
+            <h2>Kenangan Video</h2>
+            <video controls>
+                <source src="Video01.mp4" type="video/mp4">
+                Browser anda tidak menyokong video ini.
+            </video>
+            <figcaption>Lagu jiwang slow rock yang dibawakan oleh Along Spoon mengubat memekatkan kerinduan terhadap seseorang</figcaption>
+        </section>
+
+        <section id="join">
+            <h2>Sertai Komuniti Jiwang Slow Rock Melayu</h2>
+            <form>
+                <label for="name">Nama Penuh:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama anda" required>
+
+                <label for="email">Emel:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan emel anda" required>
+
+                <label for="gender">Jantina:</label>
+                <div class="gender-container">
+                    <label><input type="radio" name="gender" value="male" required> Lelaki</label>
+                    <label><input type="radio" name="gender" value="female" required> Perempuan</label>
+                </div>
+
+                <label>Hobi Kesukaan:</label>
+                <label><input type="checkbox" name="hobbies" value="music"> Mendengar Muzik</label>
+                <label><input type="checkbox" name="hobbies" value="membaca"> Menulis/Membaca Puisi</label>
+                <label><input type="checkbox" name="hobbies" value="nyanyi"> Menyanyi</label>
+
+                <button type="submit">Sertai Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Komuniti Jiwang Slowrock Melayu by Azmin S72990. Semua hak cipta terpelihara.</p>
+    </footer>
+</body>
+</html>

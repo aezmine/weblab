@@ -1,0 +1,23 @@
+/* External CSS file - styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+h1 {
+    text-decoration: underline; /* Underline decoration */
+    color: white; /* White text for contrast */
+}
+
+h2 {
+    text-decoration: underline; /* Underline decoration for h2 headings */
+}
+
+footer {
+    font-size: 14px;
+    color: #bdc3c7; /* Soft gray footer text */
+    text-align: center;
+    padding: 10px;
+}
