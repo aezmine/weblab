@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Inline Calculator</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+    <!-- Header Section -->
+    <div style="background-color: lightblue; text-align: center; padding: 20px;">
+        <h1>Simple Webpage Calculator</h1>
+        <p>Your one-stop solution for quick calculations</p>
+    </div>
+
+    <!-- Content Section -->
+    <div style="padding: 20px;">
+        <!-- Contact Form -->
+        <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+            <h2 style="color: darkblue;">Contact Us</h2>
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="contact-date">Preferred Contact Date:</label><br>
+                <input type="date" id="contact-date" name="contact-date" required><br><br>
+
+                <label for="satisfaction">Satisfaction Level:</label><br>
+                <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+                <button type="submit" style="background-color: lightblue; border: none; padding: 10px 15px; cursor: pointer;">
+                    Submit
+                </button>
+            </form>
+        </div>
+
+        <!-- Inline Calculator -->
+        <div style="padding: 10px; border: 1px solid #ccc; background-color: #f1f1f1;">
+            <h2 style="color: darkgreen;">Inline Calculator</h2>
+            <div>
+                <label for="num1">Number 1:</label><br>
+                <input type="number" id="num1"><br><br>
+
+                <label for="num2">Number 2:</label><br>
+                <input type="number" id="num2"><br><br>
+
+                <button type="button" style="background-color: lightgreen; border: none; padding: 10px 15px; cursor: pointer;"
+                    onclick="document.getElementById('result').value = 
+                        parseFloat(document.getElementById('num1').value || 0) + 
+                        parseFloat(document.getElementById('num2').value || 0);">
+                    Calculate
+                </button><br><br>
+
+                <label for="result">Result:</label><br>
+                <output id="result" style="display: block; padding: 5px; border: 1px solid #ccc; background-color: white;"></output>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div style="background-color: lightblue; text-align: center; padding: 10px;">
+        <p>Contact us at: FSKM - AZMIN</p>
+        <p>&copy; 2024 Simple Webpage Calculator</p>
+    </div>
+    
+</body>
+</html>
