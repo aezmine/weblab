@@ -1,0 +1,62 @@
+/* Dark Mode */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0;  /* Light gray for text */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Glow Effect */
+h1.glow {
+    font-size: 3em;
+    color: #FFB300;  /* Gold color for title */
+    text-shadow: 0 0 20px #FFB300, 0 0 30px #FFC107, 0 0 40px #FF9800; /* Brighter glow */
+}
+
+.btn-glow {
+    color: #FFFFFF;  /* White text for buttons */
+    background: linear-gradient(90deg, #FF5722, #FF9800); /* Gradient for buttons */
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-glow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 87, 34, 0.6), 0 10px 20px rgba(255, 152, 0, 0.6);
+}
+
+/* Section Info */
+.info {
+    background: #1E1E1E;  /* Darker background for content section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #E0E0E0;  /* Light text inside the info box */
+}
+
+.info h2 {
+    color: #FFB300;  /* Gold color for subheading */
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #B0BEC5;  /* Light gray color for footer text */
+}
+
+/* Logo */
+.logo {
+    width: 250px; /* Set the width to 250 pixels */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+}
